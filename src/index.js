@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-// import './index.css';
+import './index.css';
 import App from './App';
-import { MantineProvider, ColorSchemeScript } from '@mantine/core'
+import { MantineProvider, ColorSchemeScript, Title} from '@mantine/core'
 import '@mantine/core/styles.css';
-
+import {Top} from './Components/title.js'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -21,6 +21,7 @@ root.render(
         <ColorSchemeScript />
       </head>
       <body>
+        <Top/>
         <App />
       </body>
     </html>
