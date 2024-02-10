@@ -24,7 +24,7 @@ class Api_call:
       response = requests.request("POST", url, headers=headers, data=payload).json()
       return response["access_token"]
     except Exception as e:
-      print(e)
+      print(f" There is an error in getting access token {e}")
       return False
 
   def flight_offers(self,departure_date:str,access_token:str):
