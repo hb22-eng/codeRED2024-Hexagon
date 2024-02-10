@@ -11,7 +11,7 @@ def welcome():
 @app.route('/flight_searcher')
 def flight_searcher():
     Api_call().flight_offers(departure_date="2024-11-02",access_token=Api_call().get_access_token())
-    return 'Got flights'
+    return 'Got flights now'
 
 
 
