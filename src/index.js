@@ -2,14 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import { MantineProvider, ColorSchemeScript, Title} from '@mantine/core'
+import { MantineProvider, ColorSchemeScript, Container, Group } from '@mantine/core'
 import '@mantine/core/styles.css';
-import {Top} from './Components/title.js'
+import { Top } from './Components/title.js'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-      <MantineProvider>
-      <html lang="en">
+  <MantineProvider>
+    <html lang="en">
       <head>
         <meta charset="UTF-8" />
         <meta
@@ -20,15 +20,14 @@ root.render(
 
         <ColorSchemeScript />
       </head>
-      <body>
-        <Top/>
+      
+      <Top />
+      <Container
+        style={{ width: '135vh', boxSizing: 'border-box', border: '3px solid black', height:'70vh'}}
+        size=""
+      >
         <App />
-      </body>
+      </Container>
     </html>
-    </MantineProvider>
+  </MantineProvider>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-// reportWebVitals();

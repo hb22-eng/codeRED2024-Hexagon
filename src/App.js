@@ -1,7 +1,6 @@
 import './App.css';
-import {Input} from './Components/textinput.js'
 import ChatBot from 'react-simple-chatbot';
-import {Grid, Center, Box} from '@mantine/core'
+// import {Grid, Center, Box} from '@mantine/core'
 import {ChatUI} from './Components/chatbot.js'
 
 const steps = [
@@ -19,8 +18,8 @@ const steps = [
 
 function App() {
   return (
-    <ChatUI>
-    </ChatUI>
+      <ChatUI />
+    
   );
 }
 
